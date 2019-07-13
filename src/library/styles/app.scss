@@ -1,0 +1,105 @@
+/* 
+    Font Awesome
+*/
+@import "../../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome";
+@import "../../../node_modules/@fortawesome/fontawesome-free/scss/regular";
+@import "../../../node_modules/@fortawesome/fontawesome-free/scss/solid";
+@import "../../../node_modules/@fortawesome/fontawesome-free/scss/rotated-flipped";
+@import "../../../node_modules/@fortawesome/fontawesome-free/scss/animated";
+
+/*
+    ========================
+
+    Colors
+
+    ========================
+*/
+$primary:         #f8d227;
+$primary-hover:   #c79018;
+$white:           #fffcf1;
+/*
+    Bootstrap
+*/
+@import "../../../node_modules/bootstrap/scss/bootstrap";
+
+
+@import url('https://fonts.googleapis.com/css?family=Lobster+Two|Roboto&display=swap');
+
+/*
+    ========================
+
+    Navbar
+
+    ========================
+*/
+
+.navbar {
+    background: $primary;
+}
+
+/*
+    ========================
+
+    Jumbotron
+
+    ========================
+*/
+
+.jumbotron {
+
+    background-image: url("./library/images/daisy-floral-cake.jpg");
+    background-size: cover;
+    height: 450px;
+    border-radius: 0;
+    position: relative;
+    top: 0;
+
+    h1 {
+        color: $white;
+        font-family: 'Lobster Two', cursive;
+        margin: auto;
+        padding: 70px 0;
+        font-size: 4em;
+        @media (min-width: 600px) {
+            font-size: 7.5em;
+        }
+        @media (min-width: 800px) {
+            font-size: 10em;
+        }
+    }
+
+    button {
+        bottom: 0px;
+        right: 20px;
+        position: absolute;
+        border-bottom-left-radius: 0%;
+        border-bottom-right-radius: 0%;
+        color: $white;
+    }
+}
+
+/*
+    ========================
+
+    Home: Content
+
+    ========================
+*/
+
+.card {
+    border-radius: 0;
+    height: 200px;
+}
+
+.card-pastry {
+    background-image: url("./library/images/fresh-baked-pastry-at-modern-cafe.jpg");
+    background-size: cover;
+}
+.card-coffee {
+    background-image: url("./library/images/barista-pours-over-coffee-at-cafe.jpg");
+    background-size: cover;
+}
+.card-cake {
+    background-image: url("./library/images/smores-cake-slice.jpg");
+    background-size: cover;
+}

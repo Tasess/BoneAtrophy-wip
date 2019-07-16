@@ -23,8 +23,11 @@ $white:           #fffcf1;
 @import "../../../node_modules/bootstrap/scss/bootstrap";
 
 
-@import url('https://fonts.googleapis.com/css?family=Lobster+Two|Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lobster+Two|Open+Sans|Roboto&display=swap');
 
+body {
+    font-family: 'Open Sans', sans-serif;
+}
 /*
     ========================
 
@@ -36,7 +39,18 @@ $white:           #fffcf1;
 .navbar {
     background: $primary;
 }
-
+.navbar-brand {
+    font-size: 2em;
+    font-family: 'Lobster Two', cursive;
+}
+.navbar-nav {
+    ul,li,a {
+        margin-left: 10px;
+        font-size: 1.1em;
+        letter-spacing: 2px;
+        padding: 3px;
+    }
+}
 /*
     ========================
 
@@ -51,8 +65,10 @@ $white:           #fffcf1;
     background-size: cover;
     height: 450px;
     border-radius: 0;
+    margin-bottom: 0;
     position: relative;
     top: 0;
+    border-bottom: 4px $primary solid;
 
     h1 {
         color: $white;
@@ -89,17 +105,39 @@ $white:           #fffcf1;
 .card {
     border-radius: 0;
     height: 200px;
+    border: none;
+    h2 {
+        color: $white;
+        font-family: 'Lobster Two', cursive;
+        margin:auto;
+        font-size: 3em;
+        text-decoration: none;
+    }
+    
+}
+.card h2:hover {
+    color:$primary;
+    text-decoration-line: underline;
+    transition: .3s;
+
 }
 
 .card-pastry {
-    background-image: url("./library/images/fresh-baked-pastry-at-modern-cafe.jpg");
+    background: linear-gradient(0deg, rgb(30, 28, 27) 0%, rgba(2,0,36,0) 49%),
+    url("./library/images/fresh-baked-pastry-at-modern-cafe.jpg");
     background-size: cover;
+    background-repeat: no-repeat;
 }
 .card-coffee {
-    background-image: url("./library/images/barista-pours-over-coffee-at-cafe.jpg");
+    background: linear-gradient(0deg, rgb(30, 28, 27) 0%, rgba(2,0,36,0) 49%),
+    url("./library/images/barista-pours-over-coffee-at-cafe.jpg");
     background-size: cover;
+    background-repeat: no-repeat;
 }
 .card-cake {
-    background-image: url("./library/images/smores-cake-slice.jpg");
+    background: linear-gradient(0deg, rgb(30, 28, 27) 0%, rgba(2,0,36,0) 49%),
+    url("./library/images/smores-cake-slice.jpg");
     background-size: cover;
+    background-repeat: no-repeat;
+
 }

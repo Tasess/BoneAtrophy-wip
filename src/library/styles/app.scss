@@ -3,18 +3,20 @@
 */
 @import "../../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome";
 @import "../../../node_modules/@fortawesome/fontawesome-free/scss/regular";
+@import "../../../node_modules/@fortawesome/fontawesome-free/scss/brands.scss";
 @import "../../../node_modules/@fortawesome/fontawesome-free/scss/solid";
 @import "../../../node_modules/@fortawesome/fontawesome-free/scss/rotated-flipped";
 @import "../../../node_modules/@fortawesome/fontawesome-free/scss/animated";
 
 /*
-    ========================
+    ================================================
 
     Colors
 
-    ========================
+    ================================================
 */
-$primary:         #f8d227;
+$primary:         #ffdd48;
+$secondary:       #ffed9e;
 $primary-hover:   #df7b11;
 $white:           #fffcf1;
 $brown:           #53351c;
@@ -28,13 +30,22 @@ $brown:           #53351c;
 
 body {
     font-family: 'Open Sans Condensed', sans-serif;
+    background-color:rgba(255, 237, 158, .5);
+    background-image: radial-gradient($white 15%, transparent 16%),
+    radial-gradient($white 15%, transparent 16%);
+    background-size: 60px 60px;
+    background-position: 0 0, 30px 30px;
+    overflow-x: hidden;
+}
+.bg-white {
+    background-color: $white;
 }
 /*
-    ========================
+    ================================================
 
     Navbar
 
-    ========================
+    ================================================
 */
 
 .navbar {
@@ -48,19 +59,20 @@ body {
     ul,li,a {
         margin-left: 10px;
         font-size: 1.1em;
+        font-variant: small-caps;
         letter-spacing: 2px;
         padding: 3px;
     }
 }
 /*
-    ========================
+    ================================================
 
     Jumbotron
 
-    ========================
+    ================================================
 */
 
-.jumbotron {
+.jumbotron-home {
 
     background-image: url("./library/images/daisy-floral-cake.jpg");
     background-size: cover;
@@ -115,11 +127,11 @@ body {
 }
 
 /*
-    ========================
+    ================================================
 
-    Home: Content
+    Home.js
 
-    ========================
+    ================================================
 */
 
 .card {
@@ -199,15 +211,156 @@ body {
     }
 }
 
-
-
-
 /*
     ========================
 
-    Footer
+    Menu.js
 
     ========================
+*/
+#menu {
+    border: 4px $primary solid;
+    padding: 0;
+    margin: auto;
+    top: 80px;
+    font-size: 2em;
+    background-color: $white;
+
+    h1{
+        font-size: 3rem;
+    }
+
+    .navbar-nav {
+        ul,li,a {
+            color: rgba(255, 252, 241, 0.5);
+            text-decoration: none;
+        }
+        a:hover {
+            color: $white;
+        }
+    }
+    .menu-collapse {
+        flex-basis: 100%;
+        flex-grow: 1;
+        align-items: center;
+    }
+    @media screen and (min-width: 992px) {
+
+
+        .menu-header {
+        position: relative;
+        }
+        .navbar-nav {
+            ul,li,a {
+                font-size: .9em;
+            }
+        }
+
+    }
+    @media screen and (min-width: 1200px) {
+        .navbar-nav {
+            ul,li,a {
+                font-size: 1em;
+            }
+        }
+    }
+    @media screen and (min-width: 1326px) {
+        .navbar-nav {
+            ul,li,a {
+                font-size: 1.1em;
+            }
+        }
+    }
+}
+.menu-section {
+    h1 {
+        text-align: center;
+        margin-top: 20px;
+        background-color: $secondary;
+        padding: 5px 6px;
+    }
+    small {
+        text-align: center;
+    }
+}
+ul.menu-note {
+    list-style: none;
+}
+.menu-note li:before {
+    content: '♥';
+    padding-right: 8px;
+    color: $primary;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 1em;
+}
+.menu-padding {
+    padding: 18px 30px;
+}
+ul.list-leader {
+    max-width: 40em;
+    padding: 0;
+    overflow-x: hidden;
+    list-style: none;
+}
+ul.list-leader li:before {
+    float: left;
+    width: 0;
+    white-space: nowrap;
+    content:
+    ". . . . . . . . . . . . . . . . . . . . . . . . "
+    ". . . . . . . . . . . . . . . . . . . . . . . . "
+    ". . . . . . . . . . . . . . . . . . . . . . . . "
+    ". . . . . . . . . . . . . . . . . . . . . . . . "
+}
+ul.list-leader span:first-child {
+    padding-right:0.33em;
+    background: $white;
+}
+ul.list-leader span + span {
+    float: right;
+    padding-left: 0.33;
+    background: $white;
+}
+
+/*
+    ================================================
+
+    About.js
+
+    ================================================
+*/
+.about-header {
+    background-color: $white;
+    text-align: center;
+    padding: 50px 30px;
+    p {
+        padding: 30px;
+    }
+}
+.about-one {
+    background-image: url("./library/images/afternoon-coffee-and-coffee-cake.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    background-color: $white;;
+    height: 400px;
+
+    padding-top: 30%;
+    margin-bottom:0 !important;
+    overflow:hidden;
+
+    img {
+        width:  100%;
+        height: 100%;
+    }
+}
+/*
+    ================================================
+
+    Footer
+
+    ================================================
 */
 footer {
     bottom: 0;
@@ -233,7 +386,40 @@ footer .row {
         margin-top: 1.5em;
     }
 }
+.social-media a {
+    font-size: 3em;
+    color: $white;
+    transition: .2s;
+    display: inline-block;
+    i {
+        margin-left: 10px;
+    }
+    .fa-facebook-square:hover {
+        background: linear-gradient(20deg, rgba(20,211,250,1) 0%, rgb(61, 85, 238) 84%);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transition: .2s;
+    }
+    .fa-twitter-square:hover {
+        background: linear-gradient(20deg, rgb(35, 70, 196) 0%, rgb(137, 61, 208) 84%);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transition: .2s;
+    }
+    .fa-instagram:hover {
+        background: linear-gradient(20deg, rgb(250, 131, 20) 0%, rgb(238, 61, 114) 60%);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transition: .2s;
+    }
+}
+.footer-logo {
+    background: url("./library/images/cafe.png");
+    background-size: 150px;
+    background-repeat: no-repeat;
+    background-position: center;
 
+}
 .footer-copyright {
     background-color: darken($primary, 15%);
     color: $white;

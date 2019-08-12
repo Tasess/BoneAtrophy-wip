@@ -12,7 +12,7 @@ class Home extends Component {
         <div>
             <HashRouter>
             <div>
-                <div className="jumbotron">
+                <div className="jumbotron jumbotron-home">
                     <h1>Sweet Life</h1>
 
                     <button className="btn btn-primary"><i class="fas fa-cookie-bite"></i>  Order Now</button>
@@ -46,12 +46,13 @@ class Home extends Component {
                 <Route path="/Menu" component={Menu}/>
             </div>
             </HashRouter>
-
-            <div className="col-12 col-sm-8 container-fluid">
-                <blockquote className="blockquote text-center">
-                <p className="mb-0 display-4">Take time and enjoy a treat</p>
-                <footer className="blockquote-footer">We just think you deserve it!</footer>
-                </blockquote>
+            <div className="">
+                <div className="col-12 col-sm-8 container-fluid">
+                    <blockquote className="blockquote text-center">
+                    <p className="mb-0 display-4">Take time and enjoy a treat</p>
+                    <footer className="blockquote-footer">We just think you deserve it!</footer>
+                    </blockquote>
+                </div>
             </div>
 
         </div>

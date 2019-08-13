@@ -1,0 +1,110 @@
+/*
+    ========================
+
+    The styling for Menu.js
+
+    ========================
+*/
+#menu {
+    border: 4px $primary solid;
+    padding: 0;
+    margin: auto;
+    top: 80px;
+    font-size: 2em;
+    background-color: $white;
+
+    h1{
+        font-size: 3rem;
+    }
+
+    .navbar-nav {
+        ul,li,a {
+            color: rgba(255, 252, 241, 0.5);
+            text-decoration: none;
+        }
+        a:hover {
+            color: $white;
+        }
+    }
+    .menu-collapse {
+        flex-basis: 100%;
+        flex-grow: 1;
+        align-items: center;
+    }
+    @media screen and (min-width: 992px) {
+
+
+        .menu-header {
+        position: relative;
+        }
+        .navbar-nav {
+            ul,li,a {
+                font-size: .9em;
+            }
+        }
+
+    }
+    @media screen and (min-width: 1200px) {
+        .navbar-nav {
+            ul,li,a {
+                font-size: 1em;
+            }
+        }
+    }
+    @media screen and (min-width: 1326px) {
+        .navbar-nav {
+            ul,li,a {
+                font-size: 1.1em;
+            }
+        }
+    }
+}
+.menu-section {
+    h1 {
+        text-align: center;
+        margin-top: 20px;
+        background-color: $secondary;
+        padding: 5px 6px;
+    }
+    small {
+        text-align: center;
+    }
+}
+ul.menu-note {
+    list-style: none;
+}
+.menu-note li:before {
+    content: '♥';
+    padding-right: 8px;
+    color: $primary;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 1em;
+}
+.menu-padding {
+    padding: 18px 30px;
+}
+ul.list-leader {
+    max-width: 40em;
+    padding: 0;
+    overflow-x: hidden;
+    list-style: none;
+}
+ul.list-leader li:before {
+    float: left;
+    width: 0;
+    white-space: nowrap;
+    content:
+    ". . . . . . . . . . . . . . . . . . . . . . . . "
+    ". . . . . . . . . . . . . . . . . . . . . . . . "
+    ". . . . . . . . . . . . . . . . . . . . . . . . "
+    ". . . . . . . . . . . . . . . . . . . . . . . . "
+}
+ul.list-leader span:first-child {
+    padding-right:0.33em;
+    background: $white;
+}
+ul.list-leader span + span {
+    float: right;
+    padding-left: 0.33;
+    background: $white;
+}

@@ -1,0 +1,73 @@
+/*
+    ================================================
+
+    Footer
+
+    ================================================
+*/
+footer {
+    bottom: 0;
+    margin-bottom: 0;
+    text-align: justify;
+}
+footer .row {
+    margin-left: 0;
+    margin-right: 0;
+}
+.footer {
+
+    margin-top: 7em;
+    background-color: $primary;
+    width: 100%;
+    p {
+        margin-top: 1em;
+    }
+    h3 {
+        color: $white;
+    }
+    h3, p {
+        margin-top: 1.5em;
+    }
+}
+.social-media a {
+    font-size: 3em;
+    color: $white;
+    transition: .2s;
+    display: inline-block;
+    i {
+        margin-left: 10px;
+    }
+    .fa-facebook-square:hover {
+        background: linear-gradient(20deg, rgba(20,211,250,1) 0%, rgb(61, 85, 238) 84%);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transition: .2s;
+    }
+    .fa-twitter-square:hover {
+        background: linear-gradient(20deg, rgb(35, 70, 196) 0%, rgb(137, 61, 208) 84%);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transition: .2s;
+    }
+    .fa-instagram:hover {
+        background: linear-gradient(20deg, rgb(250, 131, 20) 0%, rgb(238, 61, 114) 60%);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transition: .2s;
+    }
+}
+.footer-logo {
+    background: url("./library/images/cafe.png");
+    background-size: 150px;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+.footer-copyright {
+    background-color: darken($primary, 15%);
+    color: $white;
+    padding-top: 1em;
+    padding-bottom: .5em;
+    bottom: 0;
+    margin:0;
+}

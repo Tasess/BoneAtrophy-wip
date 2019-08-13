@@ -1,0 +1,21 @@
+/*
+
+    The Styling for the Navbar seen on every page
+
+*/
+.navbar {
+    background: $primary;
+}
+.navbar-brand {
+    font-size: 2em;
+    font-family: 'Lobster Two', cursive;
+}
+.navbar-nav {
+    ul,li,a {
+        margin-left: 10px;
+        font-size: 1.1em;
+        font-variant: small-caps;
+        letter-spacing: 2px;
+        padding: 3px;
+    }
+}

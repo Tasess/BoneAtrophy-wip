@@ -1,0 +1,104 @@
+/*
+    ================================================
+
+    The styling for About.js
+
+    ================================================
+*/
+.about-content {
+    background-color: $white;
+    text-align: center;
+    padding: 50px 30px;
+    p {
+        padding: 30px;
+        font-size: 1.12em;
+
+    }
+}
+.about-mission {
+    background-image: url("./library/images/afternoon-coffee-and-coffee-cake.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    background-color: $white;;
+    height: 400px;
+
+    padding-top: 30%;
+    margin-bottom:0 !important;
+    overflow:hidden;
+
+    img {
+        width:  100%;
+        height: 100%;
+    }
+}
+.about-coffee {
+    background-image: url("./library/images/raw-coffee-beans-on-branch.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    background-color: $white;;
+    height: 500px;
+    padding-top: 30%;
+    margin-bottom:0 !important;
+    overflow:hidden;
+
+    img {
+        width:  100%;
+        height: 100%;
+    }
+}
+.about-ingredients {
+    background-image: url("./library/images/close-up-on-freshly-washed-blueberries.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    background-color: $white;;
+    height: 500px;
+    padding-top: 30%;
+    margin-bottom:0 !important;
+    overflow:hidden;
+
+    img {
+        width:  100%;
+        height: 100%;
+    }
+}
+.about-cake {
+    background-image: url("./library/images/smores-cake-slice.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    background-color: $white;;
+    height: 500px;
+    padding-top: 30%;
+    margin-bottom:0 !important;
+    overflow:hidden;
+    border-bottom: 5px $primary solid;
+
+    img {
+        width:  100%;
+        height: 100%;
+    }
+}
+.product-section {
+    max-height: 500px;
+    p{
+    font-size: 1.12em;
+    }
+}
+.border-top-bottom {
+    border-bottom: 5px $primary solid;
+    border-top: 5px $primary solid;
+
+}
+#coffee {
+    background-color: rgba(255, 237, 158, .7);
+}
+#ingredients {
+    background-color: rgba(248, 193, 109, .7);
+}

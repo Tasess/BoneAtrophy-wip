@@ -5895,6 +5895,22 @@ readers do not read off random characters that represent icons */
   100% {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg); } }
+/* 
+    ================================================
+
+    Font Awesome Pseudo element setup
+
+    ================================================
+
+*/
+/* line 18, library/styles/app.scss */
+.icon::before {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased; }
+
 /*
     ================================================
 
@@ -16531,36 +16547,28 @@ a.text-dark:hover, a.text-dark:focus {
   .table .thead-dark th {
     color: inherit;
     border-color: #dee2e6; } }
-/* line 31, library/styles/app.scss */
-body {
-  font-family: 'Open Sans Condensed', sans-serif;
-  background-color: rgba(255, 237, 158, 0.5);
-  background-image: radial-gradient(#fffcf1 15%, transparent 16%), radial-gradient(#fffcf1 15%, transparent 16%);
-  background-size: 60px 60px;
-  background-position: 0 0, 30px 30px;
-  overflow-x: hidden; }
-
-/* line 40, library/styles/app.scss */
-.bg-white {
-  background-color: #fffcf1; }
-
 /*
     ================================================
 
-    Navbar
+    SCSS Imports
 
     ================================================
 */
-/* line 51, library/styles/app.scss */
+/*
+
+    The Styling for the Navbar seen on every page
+
+*/
+/* line 6, library/styles/nav.scss */
 .navbar {
   background: #ffdd48; }
 
-/* line 54, library/styles/app.scss */
+/* line 9, library/styles/nav.scss */
 .navbar-brand {
   font-size: 2em;
   font-family: 'Lobster Two', cursive; }
 
-/* line 59, library/styles/app.scss */
+/* line 14, library/styles/nav.scss */
 .navbar-nav ul, .navbar-nav li, .navbar-nav a {
   margin-left: 10px;
   font-size: 1.1em;
@@ -16569,13 +16577,10 @@ body {
   padding: 3px; }
 
 /*
-    ================================================
 
-    Jumbotron
-
-    ================================================
+    The styling for Home.js
 */
-/* line 75, library/styles/app.scss */
+/* line 6, library/styles/home.scss */
 .jumbotron-home {
   background-image: url("./library/images/daisy-floral-cake.jpg");
   background-size: cover;
@@ -16585,7 +16590,7 @@ body {
   position: relative;
   top: 0;
   border-bottom: 4px #ffdd48 solid; }
-  /* line 86, library/styles/app.scss */
+  /* line 17, library/styles/home.scss */
   .jumbotron-home h1 {
     color: #fffcf1;
     font-family: 'Lobster Two', cursive;
@@ -16593,14 +16598,14 @@ body {
     padding: 70px 0;
     font-size: 4em; }
     @media (min-width: 600px) {
-      /* line 86, library/styles/app.scss */
+      /* line 17, library/styles/home.scss */
       .jumbotron-home h1 {
         font-size: 7.5em; } }
     @media (min-width: 800px) {
-      /* line 86, library/styles/app.scss */
+      /* line 17, library/styles/home.scss */
       .jumbotron-home h1 {
         font-size: 10em; } }
-  /* line 100, library/styles/app.scss */
+  /* line 31, library/styles/home.scss */
   .jumbotron-home button {
     bottom: 0px;
     right: 20px;
@@ -16612,7 +16617,7 @@ body {
     border: none;
     -webkit-transition: 1.2s;
     transition: 1.2s; }
-  /* line 111, library/styles/app.scss */
+  /* line 42, library/styles/home.scss */
   .jumbotron-home button:hover {
     background-color: #ffdd48;
     color: #df7b11;
@@ -16620,11 +16625,11 @@ body {
     -webkit-transition: 1.2s;
     transition: 1.2s;
     padding: 0.375rem 0.75rem; }
-  /* line 118, library/styles/app.scss */
+  /* line 49, library/styles/home.scss */
   .jumbotron-home button .fa-cookie-bite {
     -webkit-transition: 1.2s;
     transition: 1.2s; }
-  /* line 121, library/styles/app.scss */
+  /* line 52, library/styles/home.scss */
   .jumbotron-home button:hover .fa-cookie-bite {
     -webkit-transform: rotate(-4x0deg);
     transform: rotate(-40deg);
@@ -16635,16 +16640,16 @@ body {
 /*
     ================================================
 
-    Home.js
+    Home Content
 
     ================================================
 */
-/* line 137, library/styles/app.scss */
+/* line 68, library/styles/home.scss */
 .card {
   border-radius: 0;
   height: 200px;
   border: none; }
-  /* line 141, library/styles/app.scss */
+  /* line 72, library/styles/home.scss */
   .card h2 {
     color: #fffcf1;
     font-family: 'Lobster Two', cursive;
@@ -16652,51 +16657,51 @@ body {
     font-size: 3em;
     text-decoration: none; }
 
-/* line 150, library/styles/app.scss */
+/* line 81, library/styles/home.scss */
 .card h2 {
   -webkit-transition: 1s;
   transition: 1s; }
 
-/* line 153, library/styles/app.scss */
+/* line 84, library/styles/home.scss */
 .card h2:hover {
   color: #ffdd48;
   -webkit-transition: 1s;
   transition: 1s; }
 
-/* line 159, library/styles/app.scss */
+/* line 90, library/styles/home.scss */
 .card-pastry {
   background: -webkit-gradient(linear, left bottom, left top, from(#1e1c1b), color-stop(49%, rgba(2, 0, 36, 0))), url("./library/images/fresh-baked-pastry-at-modern-cafe.jpg");
   background: linear-gradient(0deg, #1e1c1b 0%, rgba(2, 0, 36, 0) 49%), url("./library/images/fresh-baked-pastry-at-modern-cafe.jpg");
   background-size: cover;
   background-repeat: no-repeat; }
 
-/* line 165, library/styles/app.scss */
+/* line 96, library/styles/home.scss */
 .card-coffee {
   background: -webkit-gradient(linear, left bottom, left top, from(#1e1c1b), color-stop(49%, rgba(2, 0, 36, 0))), url("./library/images/barista-pours-over-coffee-at-cafe.jpg");
   background: linear-gradient(0deg, #1e1c1b 0%, rgba(2, 0, 36, 0) 49%), url("./library/images/barista-pours-over-coffee-at-cafe.jpg");
   background-size: cover;
   background-repeat: no-repeat; }
 
-/* line 171, library/styles/app.scss */
+/* line 102, library/styles/home.scss */
 .card-cake {
   background: -webkit-gradient(linear, left bottom, left top, from(#1e1c1b), color-stop(49%, rgba(2, 0, 36, 0))), url("./library/images/smores-cake-slice.jpg");
   background: linear-gradient(0deg, #1e1c1b 0%, rgba(2, 0, 36, 0) 49%), url("./library/images/smores-cake-slice.jpg");
   background-size: cover;
   background-repeat: no-repeat; }
 
-/* line 181, library/styles/app.scss */
+/* line 112, library/styles/home.scss */
 .blockquote {
   position: relative;
   margin-top: 3em;
   line-height: 1.5em;
   font-family: 'Lobster Two', cursive; }
-  /* line 186, library/styles/app.scss */
+  /* line 117, library/styles/home.scss */
   .blockquote footer {
     font-size: 0.8em;
     color: #fbcc00;
     float: right;
     font-family: 'Open Sans Condensed', sans-serif; }
-  /* line 192, library/styles/app.scss */
+  /* line 123, library/styles/home.scss */
   .blockquote:before {
     content: '\201C';
     position: absolute;
@@ -16706,7 +16711,7 @@ body {
     color: #ffd415;
     z-index: -1;
     font-family: 'Open Sans Condensed', sans-serif; }
-  /* line 202, library/styles/app.scss */
+  /* line 133, library/styles/home.scss */
   .blockquote:after {
     content: '\201D';
     position: absolute;
@@ -16720,11 +16725,11 @@ body {
 /*
     ========================
 
-    Menu.js
+    The styling for Menu.js
 
     ========================
 */
-/* line 221, library/styles/app.scss */
+/* line 8, library/styles/menu.scss */
 #menu {
   border: 4px #ffdd48 solid;
   padding: 0;
@@ -16732,17 +16737,17 @@ body {
   top: 80px;
   font-size: 2em;
   background-color: #fffcf1; }
-  /* line 229, library/styles/app.scss */
+  /* line 16, library/styles/menu.scss */
   #menu h1 {
     font-size: 3rem; }
-  /* line 234, library/styles/app.scss */
+  /* line 21, library/styles/menu.scss */
   #menu .navbar-nav ul, #menu .navbar-nav li, #menu .navbar-nav a {
     color: rgba(255, 252, 241, 0.5);
     text-decoration: none; }
-  /* line 238, library/styles/app.scss */
+  /* line 25, library/styles/menu.scss */
   #menu .navbar-nav a:hover {
     color: #fffcf1; }
-  /* line 242, library/styles/app.scss */
+  /* line 29, library/styles/menu.scss */
   #menu .menu-collapse {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
@@ -16753,36 +16758,36 @@ body {
         -ms-flex-align: center;
             align-items: center; }
   @media screen and (min-width: 992px) {
-    /* line 250, library/styles/app.scss */
+    /* line 37, library/styles/menu.scss */
     #menu .menu-header {
       position: relative; }
-    /* line 254, library/styles/app.scss */
+    /* line 41, library/styles/menu.scss */
     #menu .navbar-nav ul, #menu .navbar-nav li, #menu .navbar-nav a {
       font-size: .9em; } }
   @media screen and (min-width: 1200px) {
-    /* line 262, library/styles/app.scss */
+    /* line 49, library/styles/menu.scss */
     #menu .navbar-nav ul, #menu .navbar-nav li, #menu .navbar-nav a {
       font-size: 1em; } }
   @media screen and (min-width: 1326px) {
-    /* line 269, library/styles/app.scss */
+    /* line 56, library/styles/menu.scss */
     #menu .navbar-nav ul, #menu .navbar-nav li, #menu .navbar-nav a {
       font-size: 1.1em; } }
 
-/* line 276, library/styles/app.scss */
+/* line 63, library/styles/menu.scss */
 .menu-section h1 {
   text-align: center;
   margin-top: 20px;
   background-color: #ffed9e;
   padding: 5px 6px; }
-/* line 282, library/styles/app.scss */
+/* line 69, library/styles/menu.scss */
 .menu-section small {
   text-align: center; }
 
-/* line 286, library/styles/app.scss */
+/* line 73, library/styles/menu.scss */
 ul.menu-note {
   list-style: none; }
 
-/* line 289, library/styles/app.scss */
+/* line 76, library/styles/menu.scss */
 .menu-note li:before {
   content: '♥';
   padding-right: 8px;
@@ -16790,30 +16795,30 @@ ul.menu-note {
   font-family: 'Open Sans Condensed', sans-serif;
   font-size: 1em; }
 
-/* line 296, library/styles/app.scss */
+/* line 83, library/styles/menu.scss */
 .menu-padding {
   padding: 18px 30px; }
 
-/* line 299, library/styles/app.scss */
+/* line 86, library/styles/menu.scss */
 ul.list-leader {
   max-width: 40em;
   padding: 0;
   overflow-x: hidden;
   list-style: none; }
 
-/* line 305, library/styles/app.scss */
+/* line 92, library/styles/menu.scss */
 ul.list-leader li:before {
   float: left;
   width: 0;
   white-space: nowrap;
   content: ". . . . . . . . . . . . . . . . . . . . . . . . " ". . . . . . . . . . . . . . . . . . . . . . . . " ". . . . . . . . . . . . . . . . . . . . . . . . " ". . . . . . . . . . . . . . . . . . . . . . . . "; }
 
-/* line 315, library/styles/app.scss */
+/* line 102, library/styles/menu.scss */
 ul.list-leader span:first-child {
   padding-right: 0.33em;
   background: #fffcf1; }
 
-/* line 319, library/styles/app.scss */
+/* line 106, library/styles/menu.scss */
 ul.list-leader span + span {
   float: right;
   padding-left: 0.33;
@@ -16822,21 +16827,21 @@ ul.list-leader span + span {
 /*
     ================================================
 
-    About.js
+    The styling for About.js
 
     ================================================
 */
-/* line 332, library/styles/app.scss */
+/* line 8, library/styles/about.scss */
 .about-content {
   background-color: #fffcf1;
   text-align: center;
   padding: 50px 30px; }
-  /* line 336, library/styles/app.scss */
+  /* line 12, library/styles/about.scss */
   .about-content p {
     padding: 30px;
     font-size: 1.12em; }
 
-/* line 342, library/styles/app.scss */
+/* line 18, library/styles/about.scss */
 .about-mission {
   background-image: url("./library/images/afternoon-coffee-and-coffee-cake.jpg");
   background-attachment: fixed;
@@ -16848,12 +16853,12 @@ ul.list-leader span + span {
   padding-top: 30%;
   margin-bottom: 0 !important;
   overflow: hidden; }
-  /* line 355, library/styles/app.scss */
+  /* line 31, library/styles/about.scss */
   .about-mission img {
     width: 100%;
     height: 100%; }
 
-/* line 360, library/styles/app.scss */
+/* line 36, library/styles/about.scss */
 .about-coffee {
   background-image: url("./library/images/raw-coffee-beans-on-branch.jpg");
   background-attachment: fixed;
@@ -16865,12 +16870,12 @@ ul.list-leader span + span {
   padding-top: 30%;
   margin-bottom: 0 !important;
   overflow: hidden; }
-  /* line 372, library/styles/app.scss */
+  /* line 48, library/styles/about.scss */
   .about-coffee img {
     width: 100%;
     height: 100%; }
 
-/* line 377, library/styles/app.scss */
+/* line 53, library/styles/about.scss */
 .about-ingredients {
   background-image: url("./library/images/close-up-on-freshly-washed-blueberries.jpg");
   background-attachment: fixed;
@@ -16882,12 +16887,12 @@ ul.list-leader span + span {
   padding-top: 30%;
   margin-bottom: 0 !important;
   overflow: hidden; }
-  /* line 389, library/styles/app.scss */
+  /* line 65, library/styles/about.scss */
   .about-ingredients img {
     width: 100%;
     height: 100%; }
 
-/* line 394, library/styles/app.scss */
+/* line 70, library/styles/about.scss */
 .about-cake {
   background-image: url("./library/images/smores-cake-slice.jpg");
   background-attachment: fixed;
@@ -16900,23 +16905,28 @@ ul.list-leader span + span {
   margin-bottom: 0 !important;
   overflow: hidden;
   border-bottom: 5px #ffdd48 solid; }
-  /* line 407, library/styles/app.scss */
+  /* line 83, library/styles/about.scss */
   .about-cake img {
     width: 100%;
     height: 100%; }
 
-/* line 412, library/styles/app.scss */
+/* line 88, library/styles/about.scss */
 .product-section {
   max-height: 500px; }
-  /* line 414, library/styles/app.scss */
+  /* line 90, library/styles/about.scss */
   .product-section p {
     font-size: 1.12em; }
 
-/* line 418, library/styles/app.scss */
+/* line 94, library/styles/about.scss */
+.border-top-bottom {
+  border-bottom: 5px #ffdd48 solid;
+  border-top: 5px #ffdd48 solid; }
+
+/* line 99, library/styles/about.scss */
 #coffee {
   background-color: rgba(255, 237, 158, 0.7); }
 
-/* line 421, library/styles/app.scss */
+/* line 102, library/styles/about.scss */
 #ingredients {
   background-color: rgba(248, 193, 109, 0.7); }
 
@@ -16927,57 +16937,57 @@ ul.list-leader span + span {
 
     ================================================
 */
-/* line 431, library/styles/app.scss */
+/* line 8, library/styles/footer.scss */
 footer {
   bottom: 0;
   margin-bottom: 0;
   text-align: justify; }
 
-/* line 436, library/styles/app.scss */
+/* line 13, library/styles/footer.scss */
 footer .row {
   margin-left: 0;
   margin-right: 0; }
 
-/* line 440, library/styles/app.scss */
+/* line 17, library/styles/footer.scss */
 .footer {
   margin-top: 7em;
   background-color: #ffdd48;
   width: 100%; }
-  /* line 445, library/styles/app.scss */
+  /* line 22, library/styles/footer.scss */
   .footer p {
     margin-top: 1em; }
-  /* line 448, library/styles/app.scss */
+  /* line 25, library/styles/footer.scss */
   .footer h3 {
     color: #fffcf1; }
-  /* line 451, library/styles/app.scss */
+  /* line 28, library/styles/footer.scss */
   .footer h3, .footer p {
     margin-top: 1.5em; }
 
-/* line 455, library/styles/app.scss */
+/* line 32, library/styles/footer.scss */
 .social-media a {
   font-size: 3em;
   color: #fffcf1;
   -webkit-transition: .2s;
   transition: .2s;
   display: inline-block; }
-  /* line 460, library/styles/app.scss */
+  /* line 37, library/styles/footer.scss */
   .social-media a i {
     margin-left: 10px; }
-  /* line 463, library/styles/app.scss */
+  /* line 40, library/styles/footer.scss */
   .social-media a .fa-facebook-square:hover {
     background: linear-gradient(20deg, #14d3fa 0%, #3d55ee 84%);
     background-clip: text;
     -webkit-text-fill-color: transparent;
     -webkit-transition: .2s;
     transition: .2s; }
-  /* line 469, library/styles/app.scss */
+  /* line 46, library/styles/footer.scss */
   .social-media a .fa-twitter-square:hover {
     background: linear-gradient(20deg, #2346c4 0%, #893dd0 84%);
     background-clip: text;
     -webkit-text-fill-color: transparent;
     -webkit-transition: .2s;
     transition: .2s; }
-  /* line 475, library/styles/app.scss */
+  /* line 52, library/styles/footer.scss */
   .social-media a .fa-instagram:hover {
     background: linear-gradient(20deg, #fa8314 0%, #ee3d72 60%);
     background-clip: text;
@@ -16985,14 +16995,14 @@ footer .row {
     -webkit-transition: .2s;
     transition: .2s; }
 
-/* line 482, library/styles/app.scss */
+/* line 59, library/styles/footer.scss */
 .footer-logo {
   background: url("./library/images/cafe.png");
   background-size: 150px;
   background-repeat: no-repeat;
   background-position: center; }
 
-/* line 489, library/styles/app.scss */
+/* line 66, library/styles/footer.scss */
 .footer-copyright {
   background-color: #fbcc00;
   color: #fffcf1;
@@ -17000,5 +17010,18 @@ footer .row {
   padding-bottom: .5em;
   bottom: 0;
   margin: 0; }
+
+/* line 58, library/styles/app.scss */
+body {
+  font-family: 'Open Sans Condensed', sans-serif;
+  background-color: rgba(255, 237, 158, 0.5);
+  background-image: radial-gradient(#fffcf1 15%, transparent 16%), radial-gradient(#fffcf1 15%, transparent 16%);
+  background-size: 60px 60px;
+  background-position: 0 0, 30px 30px;
+  overflow-x: hidden; }
+
+/* line 67, library/styles/app.scss */
+.bg-white {
+  background-color: #fffcf1; }
 
 /*# sourceMappingURL=App.css.map */

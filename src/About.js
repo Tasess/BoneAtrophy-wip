@@ -13,7 +13,7 @@ class About extends Component {
             </div>
                 
             <div className="jumbotron about-mission jumbotron-fluid"></div>
-            <div className="col-12 about-content">
+            <div className="col-12 about-content border-top-bottom">
                 <p>Our Daily goals are to warm everyone's heart and stomach, and if we're able, make someone's day.</p>
             </div>
             <div className="row">
@@ -32,8 +32,8 @@ class About extends Component {
             </div>
             <div className="row">
                 
-                <div className="col-12 about-content product-section" id="cake">
-                    <h1 className="display-4">Our Cake</h1>
+                <div className="col-12 about-content product-section border-top-bottom" id="cake">
+                    <h1 className="display-4">Our Cakes</h1>
                     <p>Cake recipes are how we started. Etiam tempus ultricies ipsum id ultricies. In hac habitasse platea dictumst. Morbi placerat nec nisi quis sollicitudin. Aliquam at lorem non elit volutpat eleifend sed id nulla. Cras id ligula quis leo aliquam finibus. Sed lacinia lorem sed diam pellentesque lacinia. Sed a mauris leo. Nunc a scelerisque nisl, fringilla ultricies nisl. Donec tincidunt ligula non luctus efficitur. Mauris quis dapibus lacus. Sed maximus, felis eu porta cursus, velit lacus blandit nunc, et finibus purus libero at lorem.  </p>
                 </div>
                 <div className=" col-12 jumbotron about-cake jumbotron-fluid"></div>

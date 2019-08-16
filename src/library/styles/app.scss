@@ -79,11 +79,24 @@ body {
 }
 
 .bordered-box {
-    top: 80px;
+        top: 80px;
     margin: auto;
     background-color: $white;
     border: 4px $primary solid;
     padding: 0;
     margin-bottom: 80px;
+    font-size: 1.5em;
     margin-top: 60px;
+    text-align: center;
+    div {
+        margin-bottom: 10px;
+    }
+    h1{
+        font-size: 3rem;
+        text-align: center;
+        font-family: 'Lobster Two', cursive;
+        color: $white;
+        background-color: $primary;
+        padding: 10px;
+    }
 }

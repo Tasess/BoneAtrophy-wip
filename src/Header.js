@@ -8,6 +8,7 @@ import Home from "./Home";
 import About from "./About";
 import Contact from "./Contact";
 import Menu from "./Menu";
+import Credit from "./Credit";
 
 class Header extends Component {
     render() {
@@ -45,6 +46,11 @@ class Header extends Component {
                         <i className="fa fa-envelope"></i> Contact
                         </NavLink>
                     </li>
+                    <li className="nav-item">
+                        <NavLink to="/Credit" className="nav-link">
+                        <i class="fas fa-heart"></i> Credit
+                        </NavLink>
+                    </li>
                 </ul>
             </div>
 
@@ -55,6 +61,7 @@ class Header extends Component {
                 <Route path="/About" component={About}/>
                 <Route path="/Contact" component={Contact}/>
                 <Route path="/Menu" component={Menu}/>
+                <Route path="/Credit" component={Credit}/>
             </div>
         </div>
         </HashRouter>

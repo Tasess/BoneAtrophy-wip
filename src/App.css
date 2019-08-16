@@ -17099,6 +17099,19 @@ body {
   border: 4px #ffdd48 solid;
   padding: 0;
   margin-bottom: 80px;
-  margin-top: 60px; }
+  font-size: 1.5em;
+  margin-top: 60px;
+  text-align: center; }
+  /* line 91, library/styles/app.scss */
+  .bordered-box div {
+    margin-bottom: 10px; }
+  /* line 94, library/styles/app.scss */
+  .bordered-box h1 {
+    font-size: 3rem;
+    text-align: center;
+    font-family: 'Lobster Two', cursive;
+    color: #fffcf1;
+    background-color: #ffdd48;
+    padding: 10px; }
 
 /*# sourceMappingURL=App.css.map */

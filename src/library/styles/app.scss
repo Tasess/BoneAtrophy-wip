@@ -49,11 +49,21 @@ $brown:           #53351c;
 
     ================================================
 */
+
 @import "./nav.scss";
 @import "./home.scss";
 @import "./menu.scss";
 @import "./about.scss";
 @import "./footer.scss";
+@import "./contact.scss";
+
+/*
+    ================================================
+
+    Body styling
+
+    ================================================
+*/
 
 body {
     font-family: 'Open Sans Condensed', sans-serif;

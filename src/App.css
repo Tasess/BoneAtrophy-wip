@@ -17091,4 +17091,14 @@ body {
 .bg-white {
   background-color: #fffcf1; }
 
+/* line 81, library/styles/app.scss */
+.bordered-box {
+  top: 80px;
+  margin: auto;
+  background-color: #fffcf1;
+  border: 4px #ffdd48 solid;
+  padding: 0;
+  margin-bottom: 80px;
+  margin-top: 60px; }
+
 /*# sourceMappingURL=App.css.map */

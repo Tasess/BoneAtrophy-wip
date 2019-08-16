@@ -7,9 +7,8 @@ class Menu extends Component {
     render() {
         
     return (
-        <div className="menu-page-bg">
             <div className="row">
-                <div className="col-10" id="menu">
+                <div className="col-12 col-md-10" id="menu">
 
                     <nav className="navbar navbar-expand-lg navbar-dark">
                         
@@ -166,7 +165,7 @@ class Menu extends Component {
                                 </ul>
                                 <ul className="menu-note">
                                 <li><small>Prices listed are for a singular serving/slice</small></li>
-                                <li><small>We also accept cake orders, please go here to put in an order.</small></li>
+                                <li><small>We also accept cake orders, please call to order.</small></li>
                                 </ul>
                             </div>
                             
@@ -266,7 +265,7 @@ class Menu extends Component {
                         </div>
                 </div>
             </div>
-        </div>
+
         
 );
 

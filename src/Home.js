@@ -15,7 +15,7 @@ class Home extends Component {
                 <div className="jumbotron jumbotron-home">
                     <h1>Sweet Life</h1>
 
-                    <button className="btn btn-primary"><i class="fas fa-cookie-bite"></i>  Order Now</button>
+                    <NavLink to="/Menu" className="nav-link" ><button className="btn btn-primary"><i class="fas fa-cookie-bite"></i> Our Menu</button></NavLink>
                 </div>
                 <div>
                     
